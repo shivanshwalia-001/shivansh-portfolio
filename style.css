@@ -18,10 +18,13 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 10%;
-    background:#111827;
+    padding:18px 10%;
+    background:rgba(17,24,39,0.85);
+    backdrop-filter:blur(12px);
     position:sticky;
     top:0;
+    z-index:1000;
+    border-bottom:1px solid rgba(56,189,248,0.15);
 }
 
 nav ul{
@@ -36,6 +39,12 @@ nav ul li{
 nav ul li a{
     color:white;
     text-decoration:none;
+    transition:0.3s ease;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
 }
 
 .hero{
@@ -54,7 +63,7 @@ nav ul li a{
 }
 
 section{
-    padding:60px 10%;
+    padding:40px 10%;
 }
 
 section h2{
@@ -191,4 +200,8 @@ footer{
     font-weight:600;
     margin:10px 0 15px;
     letter-spacing:0.5px;
+}
+nav ul li a.active{
+    color:#38bdf8;
+    font-weight:bold;
 }
